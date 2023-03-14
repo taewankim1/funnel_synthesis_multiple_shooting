@@ -1,0 +1,6 @@
+notebooks/
+funlopt_by_COP.py
+funlopt_by_OCP.py
+funlopt_by_OCP_refine.py
+nl_funlopt_by_COP.py
+trajopt.py
