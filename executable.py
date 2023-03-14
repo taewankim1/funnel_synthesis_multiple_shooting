@@ -234,6 +234,9 @@ for ce,H in zip(c_list,H_list) :
     ax.add_patch(circle1)
 plt.grid(True)
 
+filepath = ''
+plt.savefig(filepath + 'funnel_result.png',bbox_inches='tight')#,pad_inches=0.5)
+
 fS = 15
 plt.figure(figsize=(13,3))
 plt.subplot(121)
@@ -274,4 +277,8 @@ ax.axis([0.0, tf, -3, 3])
 ax.legend(fontsize=fS,loc=1)
 
 ax.grid(True)
+
+filepath = ''
+plt.savefig(filepath + 'input_result.png',bbox_inches='tight')#,pad_inches=0.5)
+
 plt.show()
