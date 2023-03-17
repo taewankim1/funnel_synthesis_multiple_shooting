@@ -198,13 +198,13 @@ def plot_two_funnel(x,Q,S,xi=None,xf=None,Qi=None,Qf=None,plt=plt,flag_label=Tru
             color='tab:green',alpha=0.5,fill=True)
             ax.add_patch(ell)
     for x_,radius,angle in zip(x,radius_Q,angle_Q) :
-        ell = Ellipse((x_[0],x_[1]),radius[0]*2,radius[1]*2,angle=np.rad2deg(angle),color='tab:brown',alpha=1.0,fill=False)
+        ell = Ellipse((x_[0],x_[1]),radius[0]*2,radius[1]*2,angle=np.rad2deg(angle),color='tab:brown',alpha=1.0,fill=False,linewidth=2.0)
         ax.add_patch(ell)
     if flag_label == True :
         plt.plot(1e3,1e3,'--',color='black',label="nominal")
-        plt.plot(1e3,1e3,'o',markersize=15,color='tab:blue',label="funnel $\mathcal{E}_{c}$") 
+        plt.plot(1e3,1e3,'o',markersize=15,color='tab:blue',label="invariant funnel $\mathcal{E}_{c}$") 
         # plt.plot(1e3,1e3,'o',markersize=15,fillstyle='none',linewidth=4,color='tab:brown',label="approx funnel") 
-        plt.plot(1e3,1e3,'o',markersize=15,fillstyle='none',linewidth=4,color='tab:brown',label="minimal funnel $\mathcal{E}$") 
+        plt.plot(1e3,1e3,'o',markersize=15,fillstyle='none',linewidth=4,color='tab:brown',label="attractive funnel $\mathcal{E}$") 
         # plt.plot(1e3,1e3,'o',markersize=15,color='tab:green',label="final") 
         plt.plot(1e3,1e3,'o',markersize=15,alpha=1.0,color='tab:green',label="initial and final") 
         plt.plot(1e3,1e3,'o',markersize=15,alpha=0.5,color='tab:red',label="obstacles") 
